@@ -24,5 +24,3 @@ set autoindent
 for $profile in split(globpath('~/.vimrc.d', '*.vimrc'), '\n')
     source $profile
 endfor
-
-autocmd FileType c,cpp source ~/.vimrc.d/dev.vimrc.d/cpp.vimrc

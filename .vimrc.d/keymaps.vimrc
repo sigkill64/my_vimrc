@@ -83,22 +83,16 @@ inoremap ] <C-R>=ReRightSquareBracket()<CR>
 func ReSingleQuotaionMark()
     if getline('.')[col('.') - 1] == "'"
         return "\<RIGHT>"
-    elseif getline('.')[col('.') - 1] == "\0" ||
-                \ getline('.')[col('.') - 1] == ' '
-        return "''\<LEFT>"
     endif
-    return "'"
+    return "''\<LEFT>"
 endfunc
 inoremap ' <C-R>=ReSingleQuotaionMark()<CR>
 
 func ReDoubleQuotaionMark()
     if getline('.')[col('.') - 1] == '"'
         return "\<RIGHT>"
-    elseif getline('.')[col('.') - 1] == "\0" ||
-                \ getline('.')[col('.') - 1] == ' '
-        return '""'."\<LEFT>"
     endif
-    return '"'
+    return '""\<LEFT>'
 endfunc
 inoremap " <C-R>=ReDoubleQuotaionMark()<CR>
 

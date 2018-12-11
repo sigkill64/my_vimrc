@@ -1,1 +1,1 @@
-autocmd FileType c,cpp source devlang.vimrc.d/cpp.vimrc
+autocmd FileType c,cpp source /home/dawn/.vimrc.d/devlang.vimrc.d/cpp.vimrc
