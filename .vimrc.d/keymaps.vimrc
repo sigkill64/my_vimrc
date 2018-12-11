@@ -92,7 +92,7 @@ func ReDoubleQuotaionMark()
     if getline('.')[col('.') - 1] == '"'
         return "\<RIGHT>"
     endif
-    return '""\<LEFT>'
+    return '""'."\<LEFT>"
 endfunc
 inoremap " <C-R>=ReDoubleQuotaionMark()<CR>
 
