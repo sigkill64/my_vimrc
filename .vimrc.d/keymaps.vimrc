@@ -30,18 +30,16 @@ func ReLeftParenthesis()
     if getline('.')[col('.') - 1] == "\0" ||
                 \ getline('.')[col('.') - 1] == " "
         return "()\<LEFT>"
-    else
-        return "("
     endif
+    return "("
 endfunc
 inoremap ( <C-R>=ReLeftParenthesis()<CR>
 
 func ReRightParenthesis()
     if getline('.')[col('.') - 1] == ')'
         return "\<RIGHT>"
-    else
-        return ")"
     endif
+    return ")"
 endfunc
 inoremap ) <C-R>=ReRightParenthesis()<CR>
 
@@ -49,18 +47,16 @@ func ReLeftBrace()
     if getline('.')[col('.') - 1] == "\0" ||
                 \ getline('.')[col('.') - 1] == " "
         return "{}\<LEFT>"
-    else
-        return "{"
     endif
+    return "{"
 endfunc
 inoremap { <C-R>=ReLeftBrace()<CR>
 
 func ReRightBrace()
     if getline('.')[col('.') - 1] == '}'
         return "\<RIGHT>"
-    else
-        return "}"
     endif
+    return "}"
 endfunc
 inoremap } <C-R>=ReRightBrace()<CR>
 
@@ -68,18 +64,16 @@ func ReLeftSquareBracket()
     if getline('.')[col('.') - 1] == "\0" ||
                 \ getline('.')[col('.') - 1] == " "
         return "[]\<LEFT>"
-    else
-        return "["
     endif
+    return "["
 endfunc
 inoremap [ <C-R>=ReLeftSquareBracket()<CR>
 
 func ReRightSquareBracket()
     if getline('.')[col('.') - 1] == ']'
         return "\<RIGHT>"
-    else
-        return "]"
     endif
+    return "]"
 endfunc
 inoremap ] <C-R>=ReRightSquareBracket()<CR>
 
@@ -109,9 +103,8 @@ func ReEnter()
     if getline('.')[col('.') - 1] == '}' &&
                 \ getline('.')[col('.') - 2] == '{'
         return "\<CR>\<CR>\<UP>\<TAB>"
-    else
-        return "\<CR>"
     endif
+    return "\<CR>"
 endfunc
 inoremap <CR> <C-R>=ReEnter()<CR>
 
