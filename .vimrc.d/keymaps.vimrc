@@ -18,7 +18,10 @@ nnoremap <S-TAB> <ESC><<
 
 "
 " imap for InsertOnly
+inoremap <C-h> <LEFT>
 inoremap <C-l> <Right>
+inoremap <C-k> <UP>
+inoremap <C-j> <DOWN>
 inoremap <C-b> <ESC>/[)\]}]<CR>a
 
 inoremap `o <ESC>ko
@@ -120,7 +123,7 @@ func ReBackspace()
     return "\<BACKSPACE>"
 endfunc
 inoremap <BACKSPACE> <C-R>=ReBackspace()<CR>
-inoremap <C-H> <C-R>=ReBackspace()<CR>
+inoremap <C-x> <C-R>=ReBackspace()<CR>
 
 "
 " cmap for CommandLine
