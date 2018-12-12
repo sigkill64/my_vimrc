@@ -41,6 +41,7 @@ inoremap <C-d> <C-k>
 inoremap <C-b> <ESC>/[)\]}]<CR>a
 
 inoremap <Leader>o <ESC><Up>o
+inoremap <Leader>s <ESC>:w<CR>a
 
 inoremap <Leader><Tab> <ESC>>>i
 inoremap <Leader><S-Tab> <C-d>
@@ -133,7 +134,7 @@ func ReBackspace()
     return "\<BACKSPACE>"
 endfunc
 inoremap <BACKSPACE> <C-R>=ReBackspace()<CR>
-inoremap <C-x> <C-R>=ReBackspace()<CR>
+inoremap <C-h> <C-R>=ReBackspace()<CR>
 
 "
 " cmap for CommandLine
