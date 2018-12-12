@@ -1,7 +1,6 @@
 " Github上的插件
 " 格式为 Plugin '用户名/插件仓库名'
 
-
 Plugin 'junegunn/vim-easy-align'
 
 Plugin 'Valloric/YouCompleteMe'
@@ -16,6 +15,12 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 Plugin 'scrooloose/nerdtree'
   map <F4> :NERDTreeToggle<CR>
+
+Plugin 'mattn/emmet-vim'
+  let g:user_emmet_mode='a'
+  let g:user_emmet_install_global = 0
+  autocmd FileType html,css EmmetInstall
+  let g:user_emmet_leader_key=','
 
 "Plugin 'artur-shaik/vim-javacomplete2'
 "  autocmd FileType java setlocal omnifunc=javacomplete#Complete
