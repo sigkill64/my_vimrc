@@ -7,9 +7,15 @@ let mapleader=','
 
 "
 " nmap for Normal
+nnoremap <C-Tab> <C-w>w
 nnoremap <C-b> /[)\]}]<CR>
 nnoremap <Tab> <ESC>>>
 nnoremap <S-Tab> <ESC><<
+
+nnoremap <Up> <C-w>k
+nnoremap <Down> <C-w>j
+nnoremap <Left> <C-w>h
+nnoremap <Right> <C-w>l
 
 "
 " vmap for Visual
@@ -22,10 +28,13 @@ nnoremap <S-Tab> <ESC><<
 
 "
 " imap for InsertOnly
-inoremap <C-h> <Left>
+inoremap <C-k> <Left>
 inoremap <C-l> <Right>
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
+
+inoremap <Up> <ESC><C-w>k
+inoremap <Down> <ESC><C-w>j
+inoremap <Left> <ESC><C-w>h
+inoremap <Right> <ESC><C-w>l
 
 inoremap <C-d> <C-k>
 
