@@ -22,6 +22,8 @@ Plugin 'mattn/emmet-vim'
   autocmd FileType html,css EmmetInstall
   let g:user_emmet_leader_key=','
 
+Plugin 'fatih/vim-go'
+
 "Plugin 'artur-shaik/vim-javacomplete2'
 "  autocmd FileType java setlocal omnifunc=javacomplete#Complete
 

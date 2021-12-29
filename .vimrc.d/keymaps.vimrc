@@ -7,8 +7,7 @@ let mapleader=','
 
 "
 " nmap for Normal
-nnoremap <C-Tab> <C-w>w
-nnoremap <C-b> /[)\]}]<CR>
+nnoremap <C-j> /[)\]}]<CR>
 nnoremap <Tab> <ESC>>>
 nnoremap <S-Tab> <ESC><<
 
@@ -28,17 +27,12 @@ nnoremap <Right> <C-w>l
 
 "
 " imap for InsertOnly
-inoremap <C-k> <Left>
-inoremap <C-l> <Right>
-
 inoremap <Up> <ESC><C-w>k
 inoremap <Down> <ESC><C-w>j
 inoremap <Left> <ESC><C-w>h
 inoremap <Right> <ESC><C-w>l
 
-inoremap <C-d> <C-k>
-
-inoremap <C-b> <ESC>/[)\]}]<CR>a
+inoremap <C-j> <ESC>/[)\]}]<CR>a
 
 inoremap <Leader>o <ESC><Up>o
 inoremap <Leader>s <ESC>:w<CR>a
